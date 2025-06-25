@@ -19,7 +19,7 @@ int main() {
         //проверка ввода выбора меню
         while (!(cin >> choice)) {
             cin.clear();  //сброс флагов ошибок
-            cin.ignore(); //очистка буфера
+            cin.ignore(numeric_limits<streamsize>::max(), '\n'); //очистка буфера
             cout << "Ошибка ввода! Введите число от 1 до 4: ";
         }
 
@@ -35,7 +35,7 @@ int main() {
             //проверка ввода глубины дерева
             while (!(cin >> depth) or depth < 3 or depth > 5) {
                 cin.clear();
-                cin.ignore();
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
                 cout << "Ошибка! Введите целое число от 3 до 5: ";
             }
             root = builder.randTree(depth);//рандомная генерация дерева
@@ -49,7 +49,7 @@ int main() {
             string filename;
             cout << "Введите имя файла: ";
             cin.clear();
-            cin.ignore();//очищаем буфер для корректного ввода
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');//очищаем буфер для корректного ввода
             getline(cin, filename);//чтение строки
 
             if (filename.empty()) {
