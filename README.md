@@ -90,6 +90,11 @@
      - Вызываем makeSymmetric(a->right, b->left) (правое поддерево a сравнивается с левым поддеревом b).
      - Суммируем количество удалённых узлов (cuts += ...).
 4. Возврат результата: возвращаем общее количество удалённых узлов (cuts).
+## Тестирование
+![image](https://github.com/user-attachments/assets/6cc467f5-934e-4952-aeaf-2503161c0112)
+![image](https://github.com/user-attachments/assets/091e59c2-4f9c-4728-80f7-5b4b350c2a9f)
+![image](https://github.com/user-attachments/assets/c2bdb327-276f-41a7-9539-95fe8964aafb)
+
 
 
 
